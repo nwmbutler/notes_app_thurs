@@ -1,3 +1,26 @@
+(function (exports) {
+  function NoteController(noteListModel) {
+      this.noteListModel = noteListModel;
+  };
+  exports.NoteController = NoteController;
+})(this);
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // (function (exports) {
 //   function NoteController(NoteList) {
 //     this.notelist = NoteList;
