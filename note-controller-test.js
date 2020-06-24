@@ -1,7 +1,3 @@
-const { NoteList } = require("./note-list-model");
-const { assert } = require("console");
-const { NoteController } = require("./note-controller");
-
 function instantiateNoteController() {
   var list = new NoteList;
   var controller = new NoteController(list);
@@ -11,12 +7,13 @@ function instantiateNoteController() {
 function innnerHTMLContainsPassedFavourite() {
   var list = new NoteList;
   var controller = new NoteController(list);
-  list.addNote('Pesto');
 
-  assert.isTrue(document.get)
 
+  controller.renderHtml();
+  assert.isTrue(this.div.id === 'Pesto')
 }
 
 
 
 instantiateNoteController();
+innnerHTMLContainsPassedFavourite();

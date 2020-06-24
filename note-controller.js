@@ -2,6 +2,11 @@
   function NoteController(noteListModel) {
       this.noteListModel = noteListModel;
   };
+
+  NoteController.prototype.renderHtml = function() {
+    var test = document.getElementById('app')
+    test.innerHTML = 'Pesto'
+  }
   exports.NoteController = NoteController;
 })(this);
     
